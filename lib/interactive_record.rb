@@ -70,7 +70,6 @@ class InteractiveRecord
             WHERE #{column[0]} = '#{column[1]}'
         SQL
         DB[:conn].execute(sql)
-     end
   end 
   
 end
