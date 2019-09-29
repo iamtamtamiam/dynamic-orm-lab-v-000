@@ -63,7 +63,7 @@ class InteractiveRecord
   
   def self.find_by(attribute)
     #expect(Student.find_by({name: "Susan"}))
-   binding.pry 
+  
     sql = <<-SQL
       SELECT *
       FROM #{self.table_name}
