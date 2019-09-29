@@ -48,6 +48,8 @@ class InteractiveRecord
     SQL
     
     DB[:conn].execute(sql)
+    
+    @id = DB[:conn].execute("SELECT")
   end 
   
 end
