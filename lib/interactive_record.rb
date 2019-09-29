@@ -63,11 +63,12 @@ class InteractiveRecord
   
   def self.find_by(attribute)
     #expect(Student.find_by({name: "Susan"}))
+  col = attribute.keys.to_str
   
     sql = <<-SQL
       SELECT *
       FROM #{self.table_name}
-      WHERE #{attribute.keys.to_str} = '#{attribute[attribute.keys]}'
+      WHERE #{col} = '#{attribute[attribute.keys]}'
     SQL
     DB[:conn].execute(sql)
   end 
