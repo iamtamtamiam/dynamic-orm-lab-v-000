@@ -63,7 +63,7 @@ class InteractiveRecord
   
   def self.find_by(attribute)
     #expect(Student.find_by({name: "Susan"}))
-  col = attribute.keys.to_str
+  col = attribute.keys.to_s
   
     sql = <<-SQL
       SELECT *
