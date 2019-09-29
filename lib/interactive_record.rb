@@ -43,7 +43,7 @@ class InteractiveRecord
   
   def save
     sql = <<-SQL
-      INSERT INTO 
+      INSERT INTO {
     SQL
   end 
   
